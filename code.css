@@ -2,6 +2,8 @@
 body {
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
+}
+body[data-smooth-scroll] {
   overflow: hidden;
 }
 
@@ -148,6 +150,10 @@ body {
 
 /* PHONE-CELL SUPPORT */
 @media (orientation: portrait) {
+  /* Custom scroll */
+  .custom-scrollbar {
+    display: none;
+  }
   /* Banner */
   .banner-content {
     display: flex;

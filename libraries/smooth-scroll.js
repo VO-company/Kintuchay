@@ -1,3 +1,4 @@
+const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 (function (window, document) {
   "use strict";
   class SmoothScrollController {
@@ -28,16 +29,13 @@
       this.element.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
       this.element.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
       this.element.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: true });
-
       if (this.isWindow) {
         window.addEventListener(
           "resize",
-
           this.onResize,
         );
         document.addEventListener(
           "click",
-
           this.onClick,
         );
       }
@@ -45,7 +43,6 @@
     }
     parseLerp(value) {
       const number = parseFloat(value);
-
       if (!Number.isFinite(number)) {
         return 0.08;
       }
@@ -227,6 +224,9 @@
     instances: [],
     init() {
       this.destroy();
+      if (isMobile) {
+        return this;
+      }
       if (document.body.hasAttribute("data-smooth-scroll")) {
         const instance = new SmoothScrollController(window);
 

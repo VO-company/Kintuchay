@@ -66,6 +66,14 @@ thumb.addEventListener("mousedown", (e) => {
   document.addEventListener("mousemove", onMove);
   document.addEventListener("mouseup", onUp);
 });
+const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+if (isTouchDevice) {
+  document.body.removeAttribute("data-smooth-scroll");
+  const customScrollbar = document.querySelector(".custom-scrollbar");
+  if (customScrollbar) {
+    customScrollbar.style.display = "none";
+  }
+}
 
 /* TOP-BAR */
 const topBar = document.querySelector(".top-bar");
