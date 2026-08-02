@@ -2,10 +2,6 @@
 body {
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
-  background-image: url("assets/background/lb.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
   overflow: hidden;
 }
 
@@ -28,17 +24,21 @@ body {
 /* BAR */
 .top-bar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 10vh;
   background-color: rgba(41, 41, 41);
   opacity: 0;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 1000;
 }
+
 /* BANNER */
 .banner {
   height: 100vh;
+  animation: fadeIn 1.5s ease forwards;
 }
 .banner img {
   width: 100%;
@@ -50,12 +50,24 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+.icon-container,
+.text-container {
+  transition: opacity 0.3s linear;
 }
 .icon-container {
   position: absolute;
   top: 5%;
   left: 5%;
   width: 25vw;
+}
+.icon-container img {
+  opacity: 0;
+  transform: scale(0.5) rotate(0deg);
+  animation: zoomRotate 1.5s ease forwards;
+  animation-delay: 1s;
 }
 .text-container {
   position: absolute;
@@ -66,6 +78,9 @@ body {
   font-weight: bold;
   color: rgba(206, 206, 206);
   -webkit-text-stroke: 0.2vw black;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 1s;
 }
 
 /* SECTION BLOCKS */
@@ -112,6 +127,23 @@ body {
 }
 .section-block.b2 .section-image {
   margin-right: 1%;
+}
+
+/* ANIMATIONS */
+/* Banner */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes zoomRotate {
+  from {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
 }
 
 /* PHONE-CELL SUPPORT */

@@ -23,20 +23,12 @@
       this.init();
     }
     init() {
-      this.element.addEventListener(
-        "wheel",
-        this.onWheel,
-        {
-          passive: false,
-        },
-      );
-      this.element.addEventListener(
-        "scroll",
-        this.onScroll,
-        {
-          passive: true,
-        },
-      );
+      this.element.addEventListener("wheel", this.onWheel, { passive: false });
+      this.element.addEventListener("scroll", this.onScroll, { passive: true });
+      this.element.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
+      this.element.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
+      this.element.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: true });
+
       if (this.isWindow) {
         window.addEventListener(
           "resize",
@@ -57,10 +49,7 @@
       if (!Number.isFinite(number)) {
         return 0.08;
       }
-      return Math.max(
-        0.01,
-        Math.min(number, 1),
-      );
+      return Math.max(0.01, Math.min(number, 1));
     }
     parseNumber(value, fallback) {
       const number = parseFloat(value);
@@ -74,45 +63,21 @@
     }
     getMaxX() {
       if (this.isWindow) {
-        return Math.max(
-          0,
-          document.documentElement.scrollWidth - window.innerWidth,
-        );
+        return Math.max(0, document.documentElement.scrollWidth - window.innerWidth);
       }
-      return Math.max(
-        0,
-        this.element.scrollWidth - this.element.clientWidth,
-      );
+      return Math.max(0, this.element.scrollWidth - this.element.clientWidth);
     }
     getMaxY() {
       if (this.isWindow) {
-        return Math.max(
-          0,
-          document.documentElement.scrollHeight - window.innerHeight,
-        );
+        return Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
       }
-      return Math.max(
-        0,
-        this.element.scrollHeight - this.element.clientHeight,
-      );
+      return Math.max(0, this.element.scrollHeight - this.element.clientHeight);
     }
     clampX(value) {
-      return Math.max(
-        0,
-        Math.min(
-          value,
-          this.getMaxX(),
-        ),
-      );
+      return Math.max(0, Math.min(value, this.getMaxX()));
     }
     clampY(value) {
-      return Math.max(
-        0,
-        Math.min(
-          value,
-          this.getMaxY(),
-        ),
-      );
+      return Math.max(0, Math.min(value, this.getMaxY()));
     }
     onWheel(event) {
       if (event.ctrlKey) {
@@ -159,6 +124,18 @@
       this.targetX = this.clampX(this.targetX);
       this.targetY = this.clampY(this.targetY);
     }
+    onTouchStart(event) {
+      this.touchStartY = event.touches[0].clientY;
+      this.startTargetY = this.targetY;
+    }
+    onTouchMove(event) {
+      const deltaY = this.touchStartY - event.touches[0].clientY;
+      this.targetY = this.clampY(this.startTargetY + deltaY);
+      this.animating = true;
+      event.preventDefault();
+    }
+    onTouchEnd() {
+    }
     onClick(event) {
       const link = event.target.closest("a[href^='#']");
       if (!link) {
@@ -182,18 +159,11 @@
       this.targetX = this.clampX(rect.left + window.scrollX);
       this.targetY = this.clampY(rect.top + window.scrollY);
       this.animating = true;
-      history.pushState(
-        null,
-        "",
-        href,
-      );
+      history.pushState(null, "", href);
     }
     setScroll(x, y) {
       if (this.isWindow) {
-        window.scrollTo(
-          x,
-          y,
-        );
+        window.scrollTo(x, y);
       } else {
         this.element.scrollLeft = x;
         this.element.scrollTop = y;
@@ -214,10 +184,7 @@
         if (Math.abs(dy) < 0.01) {
           this.y = this.targetY;
         }
-        this.setScroll(
-          this.x,
-          this.y,
-        );
+        this.setScroll(this.x, this.y);
         if (Math.abs(this.targetX - this.x) < 0.01 && Math.abs(this.targetY - this.y) < 0.01) {
           this.animating = false;
         }
@@ -239,38 +206,20 @@
       }
       if (this.isWindow) {
         const rect = element.getBoundingClientRect();
-        this.scrollTo(
-          rect.left + window.scrollX,
-          rect.top + window.scrollY,
-        );
+        this.scrollTo(rect.left + window.scrollX, rect.top + window.scrollY);
       } else {
         const elementRect = element.getBoundingClientRect();
         const containerRect = this.element.getBoundingClientRect();
-        this.scrollTo(
-          this.x + (elementRect.left - containerRect.left),
-          this.y + (elementRect.top - containerRect.top),
-        );
+        this.scrollTo(this.x + (elementRect.left - containerRect.left), this.y + (elementRect.top - containerRect.top));
       }
     }
     destroy() {
       this.destroyed = true;
-      this.element.removeEventListener(
-        "wheel",
-        this.onWheel,
-      );
-      this.element.removeEventListener(
-        "scroll",
-        this.onScroll,
-      );
+      this.element.removeEventListener("wheel", this.onWheel);
+      this.element.removeEventListener("scroll", this.onScroll);
       if (this.isWindow) {
-        window.removeEventListener(
-          "resize",
-          this.onResize,
-        );
-        document.removeEventListener(
-          "click",
-          this.onClick,
-        );
+        window.removeEventListener("resize", this.onResize);
+        document.removeEventListener("click", this.onClick);
       }
     }
   }

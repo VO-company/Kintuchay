@@ -69,35 +69,41 @@ thumb.addEventListener("mousedown", (e) => {
 
 /* TOP-BAR */
 const topBar = document.querySelector(".top-bar");
-const bannerHeight = document.querySelector(".banner").offsetHeight;
-
-window.addEventListener("scroll", () => {
+const banner = document.querySelector(".banner");
+const firstBlock = document.querySelector(".sections-container");
+function updateTopBar() {
   const scrollY = window.scrollY;
-  const ratio = Math.min(scrollY / bannerHeight, 1); // 0 → inicio, 1 → fin del banner
-
-  // interpolación: -100% (oculta arriba) → 0% (posición normal)
-  const translateY = (-100 + (100 * ratio)) + "%";
-
+  const bannerHeight = banner.offsetHeight;
+  const bannerBottom = banner.offsetTop + bannerHeight;
+  const ratio = Math.min(scrollY / bannerHeight, 1);
+  const translateY = (-100 + 100 * ratio) + "%";
   topBar.style.transform = `translateY(${translateY})`;
-  topBar.style.opacity = ratio; // también se desvanece progresivamente
-});
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const ratio = Math.min(scrollY / bannerHeight, 1); // 0 → arriba, 1 → abajo
-
-  // interpolación: -100% (oculta) → 0% (visible)
-  const translateY = (-100 + (100 * ratio)) + "%";
-
-  topBar.style.transform = `translateY(${translateY})`;
-  topBar.style.opacity = ratio; // también se desvanece progresivamente
-});
+  topBar.style.opacity = ratio;
+  if (scrollY >= bannerBottom) {
+    topBar.style.transform = "translateY(0%)";
+    topBar.style.opacity = 1;
+  }
+}
+window.addEventListener("scroll", updateTopBar);
+window.addEventListener("resize", updateTopBar);
+window.addEventListener("load", updateTopBar);
 
 /* BANNER */
-document.querySelector(".banner").addEventListener("click", () => {
-  const banner = document.querySelector(".banner");
+banner.addEventListener("click", () => {
   const bannerBottom = banner.offsetTop + banner.offsetHeight;
   SmoothScroll.scrollTo(0, bannerBottom);
 });
+const bannerContent = document.querySelector(".banner-content");
+function updateBannerContent() {
+  const scrollY = window.scrollY;
+  const bannerHeight = banner.offsetHeight;
+  const ratio = Math.min(scrollY / bannerHeight, 1);
+  const opacity = 1 - ratio;
+  bannerContent.style.opacity = opacity;
+}
+window.addEventListener("scroll", updateBannerContent);
+window.addEventListener("resize", updateBannerContent);
+window.addEventListener("load", updateBannerContent);
 
 /* SECTION BLOCKS */
 async function renderSections() {
