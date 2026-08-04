@@ -1,4 +1,8 @@
 ui.welcome=Bienvenidos a KINTUCHAY
+ui.languaje=Idioma:
+ui.mode = Modo de interfaz:
+
+selected_language=Seleccionaste
 
 section_block.the_magic_of_food=LA MAGIA DE LA COMIDA
 section_block.the_magic_of_food.description=La comida es una experiencia que trasciende el instante. No comienza en el plato ni termina en el último bocado. Vive en aquello que nos reúne, en lo que heredamos y en lo que transformamos. \nCada encuentro alrededor de una mesa es también un encuentro de historias, de lugares y de memorias. Nada permanece igual: todo se mezcla, se transforma y adquiere un nuevo significado. \nQuizá por eso comer sea una forma de viajar sin partir, de reconocer lo conocido desde una nueva mirada y de descubrir aquello que aún no sabíamos que buscábamos. \nPorque al final, no recordamos solamente lo que comimos, sino aquello que sentimos mientras lo vivimos.

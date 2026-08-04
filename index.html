@@ -1,36 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Kintuchay Restobar</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="code.css">
-  <link rel="preload" as="image" href="assets/background/lb.png">
-</head>
-<body 
-  style="margin:0;
-         font-family:'Roboto', Arial, sans-serif;
-         background-image:url('assets/background/lb.png');
-         background-size:100% 100%;
-         background-repeat:no-repeat;
-         background-position:center;"
-  data-smooth-scroll data-smooth="0.08">
-  <div class="top-bar"></div>
-  <div class="banner">
-    <img src="assets/banners/main.webp" alt="Banner Principal">
-    <div class="banner-content">
-      <div class="icon-container">
-        <img src="assets/icon.svg" alt="Icono">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kintuchay Restobar</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="code.css" />
+    <link rel="image" href="assets/background/lb.png" />
+    <link rel="image" href="assets/background/db.png" />
+    <style>
+      body.light-mode {
+        background-color: rgb(206, 206, 206);
+        background-image: url("assets/background/lb.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      body.dark-mode {
+        background-color: rgb(41, 41, 41);
+        background-image: url("assets/background/db.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; font-family: &quot;Roboto&quot;, Arial, sans-serif" data-smooth-scroll data-smooth="0.08">
+    <div class="top-bar">
+      <div class="menu-box">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="text-container" data-lang="ui.welcome"></div>
+      <div class="bar-logo">
+        <img class="logo-pc" src="assets/title_bar.svg" alt="Logo PC" />
+        <img class="logo-mobile" src="assets/icon_bar.svg" alt="Logo Móvil" />
+      </div>
+      <div class="lang-toggle" id="lang-toggle">ES</div>
     </div>
-  </div>
-  <div class="sections-container"></div>
-  <div class="custom-scrollbar">
-    <div class="thumb"></div>
-  </div>
-  <script src="libraries/smooth-scroll.js"></script>
-  <script src="meta-data.js"></script>
-  <script src="code.js"></script>
-</body>
+    <div class="banner">
+      <img src="assets/banners/main.webp" alt="Banner Principal" />
+      <div class="banner-content">
+        <div class="icon-container">
+          <img src="assets/icon.svg" alt="Icono" />
+        </div>
+        <div class="text-container" data-lang="ui.welcome"></div>
+      </div>
+    </div>
+    <div class="sections-container"></div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.1440075838985!2d-71.9780!3d-13.5171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91425d3f5c7e6f3b%3A0x0!2sKiskapata%20287%2C%20Cusco%2008003%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1690000000000"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="custom-scrollbar">
+      <div class="thumb"></div>
+    </div>
+    <script src="libraries/smooth-scroll.js"></script>
+    <script src="meta-data.js"></script>
+    <script src="code.js"></script>
+  </body>
 </html>

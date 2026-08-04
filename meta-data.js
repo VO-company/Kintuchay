@@ -1,3 +1,11 @@
+/* LANGUAGES */
+const languages = {
+  es: "ESPAÑOL",
+  en: "ENGLISH",
+  default_lang: "en"
+};
+
+/* SECTION BLOCKS */
 const sectionBlocks = [
   {
     model: "b1",
