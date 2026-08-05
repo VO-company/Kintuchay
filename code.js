@@ -1,7 +1,6 @@
 /* LANGUAJES */
 function detectLanguage() {
   const userLang = navigator.language.toLowerCase();
-
   if (userLang.startsWith("en")) {
     return "en";
   } else if (userLang.startsWith("es")) {
@@ -156,30 +155,6 @@ window.addEventListener("scroll", updateTopBar);
 window.addEventListener("resize", updateTopBar);
 window.addEventListener("load", updateTopBar);
 
-/* BANNER */
-banner.addEventListener("click", () => {
-  const bannerBottom = banner.offsetTop + banner.offsetHeight;
-  if (isTouchDevice) {
-    window.scrollTo({
-      top: bannerBottom,
-      behavior: "smooth",
-    });
-  } else {
-    SmoothScroll.scrollTo(0, bannerBottom);
-  }
-});
-const bannerContent = document.querySelector(".banner-content");
-function updateBannerContent() {
-  const scrollY = window.scrollY;
-  const bannerHeight = banner.offsetHeight;
-  const ratio = Math.min(scrollY / bannerHeight, 1);
-  const opacity = 1 - ratio;
-  bannerContent.style.opacity = opacity;
-}
-window.addEventListener("scroll", updateBannerContent);
-window.addEventListener("resize", updateBannerContent);
-window.addEventListener("load", updateBannerContent);
-
 /* MENU OPTIONS */
 document.querySelector(".menu-box").addEventListener("click", () => {
   let sideMenu = document.querySelector(".side-menu");
@@ -218,6 +193,22 @@ async function renderMenuOptions() {
     });
     menuList.appendChild(li);
   });
+  const mapLi = document.createElement("li");
+  mapLi.setAttribute("data-lang", "ui.map");
+  mapLi.addEventListener("click", () => {
+    const target = document.querySelector(".map-container");
+    if (target) {
+      const top = target.offsetTop;
+      if (isTouchDevice) {
+        window.scrollTo({ top, behavior: "smooth" });
+      } else {
+        SmoothScroll.scrollTo(0, top);
+      }
+      closeMenu();
+    }
+  });
+  menuList.appendChild(mapLi);
+
   const separator = document.createElement("hr");
   separator.classList.add("menu-separator");
   menuList.appendChild(separator);
@@ -310,6 +301,30 @@ function detectDefaultMode() {
     return "light-mode";
   }
 }
+
+/* BANNER */
+banner.addEventListener("click", () => {
+  const bannerBottom = banner.offsetTop + banner.offsetHeight;
+  if (isTouchDevice) {
+    window.scrollTo({
+      top: bannerBottom,
+      behavior: "smooth",
+    });
+  } else {
+    SmoothScroll.scrollTo(0, bannerBottom);
+  }
+});
+const bannerContent = document.querySelector(".banner-content");
+function updateBannerContent() {
+  const scrollY = window.scrollY;
+  const bannerHeight = banner.offsetHeight;
+  const ratio = Math.min(scrollY / bannerHeight, 1);
+  const opacity = 1 - ratio;
+  bannerContent.style.opacity = opacity;
+}
+window.addEventListener("scroll", updateBannerContent);
+window.addEventListener("resize", updateBannerContent);
+window.addEventListener("load", updateBannerContent);
 
 /* SECTION BLOCKS */
 function observeImages() {
