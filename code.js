@@ -134,6 +134,30 @@ window.addEventListener("load", () => {
   }, 0);
 });
 
+/* LEAF LOAD */
+function playLeafAnimation(url) {
+  const overlay = document.getElementById("leaf-overlay");
+  const leaf1 = document.getElementById("leaf1");
+  const leaf2 = document.getElementById("leaf2");
+  const leaf3 = document.getElementById("leaf3");
+  overlay.style.display = "block";
+  leaf1.classList.remove("anim1");
+  leaf2.classList.remove("anim2");
+  leaf3.classList.remove("anim3");
+  void leaf1.offsetWidth;
+  leaf1.classList.add("anim1");
+  leaf1.addEventListener("animationend", () => {
+    leaf2.classList.add("anim2");
+  }, { once:true });
+  leaf2.addEventListener("animationend", () => {
+    leaf3.classList.add("anim3");
+  }, { once:true });
+  leaf3.addEventListener("animationend", () => {
+    overlay.style.display = "none";
+    window.open(url, "_blank");
+  }, { once:true });
+}
+
 /* TOP-BAR */
 const topBar = document.querySelector(".top-bar");
 const banner = document.querySelector(".banner");
@@ -176,10 +200,17 @@ async function renderMenuOptions() {
   const menuList = document.getElementById("menu-options");
   if (!menuList) return;
   menuList.innerHTML = "";
+
+  // 👉 Secciones dinámicas
   sectionBlocks.forEach((block) => {
-    const li = document.createElement("li");
-    li.setAttribute("data-lang", `section_block.${block.key}`);
-    li.addEventListener("click", () => {
+    const optionContainer = document.createElement("div");
+    optionContainer.classList.add("option", "section_block");
+
+    const optionTitle = document.createElement("div");
+    optionTitle.setAttribute("data-lang", `section_block.${block.key}`);
+    optionTitle.classList.add("option-title");
+
+    optionTitle.addEventListener("click", () => {
       const target = document.querySelector(`.section-container[data-key="${block.key}"]`);
       if (target) {
         const top = target.offsetTop;
@@ -191,11 +222,19 @@ async function renderMenuOptions() {
         closeMenu();
       }
     });
-    menuList.appendChild(li);
+
+    optionContainer.appendChild(optionTitle);
+    menuList.appendChild(optionContainer);
   });
-  const mapLi = document.createElement("li");
-  mapLi.setAttribute("data-lang", "ui.map");
-  mapLi.addEventListener("click", () => {
+
+  // 👉 Contenedor Ubicación
+  const locationContainer = document.createElement("div");
+  locationContainer.classList.add("option", "location");
+
+  const locationTitle = document.createElement("div");
+  locationTitle.setAttribute("data-lang", "ui.map");
+  locationTitle.classList.add("option-title");
+  locationTitle.addEventListener("click", () => {
     const target = document.querySelector(".map-container");
     if (target) {
       const top = target.offsetTop;
@@ -207,18 +246,45 @@ async function renderMenuOptions() {
       closeMenu();
     }
   });
-  menuList.appendChild(mapLi);
+  locationContainer.appendChild(locationTitle);
 
+  // Subopción Google Maps
+  const googleSub = document.createElement("div");
+  googleSub.classList.add("suboption", "google");
+  googleSub.setAttribute("data-lang", "map.google");
+  googleSub.addEventListener("click", () => {
+    playLeafAnimation("https://www.google.com/maps/dir/?api=1&destination=K'intuchay,+Kiskapata,+Cusco");
+    closeMenu();
+  });
+
+  // Subopción Waze
+  const wazeSub = document.createElement("div");
+  wazeSub.classList.add("suboption", "waze");
+  wazeSub.setAttribute("data-lang", "map.waze");
+  wazeSub.addEventListener("click", () => {
+    playLeafAnimation("https://waze.com/ul?q=Kintuchay%20Kiskapata%20Cusco&navigate=yes");
+    closeMenu();
+  });
+
+  locationContainer.appendChild(googleSub);
+  locationContainer.appendChild(wazeSub);
+
+  menuList.appendChild(locationContainer);
+
+  // 👉 Separador
   const separator = document.createElement("hr");
-  separator.classList.add("menu-separator");
+  separator.classList.add("menu_separator");
   menuList.appendChild(separator);
+
+  // 👉 Contenedor Idioma
   const langContainer = document.createElement("div");
-  langContainer.classList.add("menu-lang-container");
+  langContainer.classList.add("option", "languaje");
   const langLabel = document.createElement("div");
   langLabel.setAttribute("data-lang", "ui.languaje");
   langContainer.appendChild(langLabel);
+
   const langButton = document.createElement("button");
-  langButton.classList.add("menu-lang-button");
+  langButton.classList.add("button", "languaje_select");
   const languageName = languages[currentLang];
   const langFile = `lang/${currentLang}.lang`;
   loadLang(langFile).then((lang) => {
@@ -235,16 +301,20 @@ async function renderMenuOptions() {
   });
   langContainer.appendChild(langButton);
   menuList.appendChild(langContainer);
+
+  // 👉 Contenedor Modo
   const modeContainer = document.createElement("div");
-  modeContainer.classList.add("menu-mode-container");
+  modeContainer.classList.add("option", "web_mode");
   const modeLabel = document.createElement("div");
   modeLabel.setAttribute("data-lang", "ui.mode");
   modeContainer.appendChild(modeLabel);
+
   const modeSwitch = document.createElement("div");
-  modeSwitch.classList.add("switch");
+  modeSwitch.classList.add("switch", "mode_select");
   const slider = document.createElement("span");
   slider.classList.add("slider");
   modeSwitch.appendChild(slider);
+
   if (document.body.classList.contains("dark-mode")) {
     modeSwitch.classList.add("active");
   }
@@ -260,8 +330,11 @@ async function renderMenuOptions() {
   });
   modeContainer.appendChild(modeSwitch);
   menuList.appendChild(modeContainer);
+
+  // 👉 Aplica traducciones
   applyLang(`lang/${currentLang}.lang`);
 }
+
 function updateMenuHeight() {
   const topBarRect = topBar.getBoundingClientRect();
   const sideMenu = document.querySelector(".side-menu");

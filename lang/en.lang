@@ -11,4 +11,5 @@ section_block.the_magic_of_food.description=Food is an experience that transcend
 section_block.the_experience=THE KINTUCHAY EXPERIENCE
 section_block.the_experience.description=Discover a place where Peruvian cuisine, mixology, and the magic of Cusco come together in one space. \nEnjoy the finest of our national gastronomy, prepared with flavors and ingredients that embody the richness of Peru, accompanied by a curated selection of cocktails—both timeless classics and creations designed to surprise. \nAll of this unfolds in an incomparable setting: a unique vantage point to admire the great city of Cusco in all its splendor. Let yourself be captivated by breathtaking views of the city, its rooftops, mountains, and sunsets, while sharing a memorable meal and an exceptional drink.
 
-map=View route on Google Maps
+map.google=View route on Google Maps
+map.waze=View route in Waze

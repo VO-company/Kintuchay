@@ -49,22 +49,29 @@
     <div class="sections-container"></div>
     <div class="map-container">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.1440075838985!2d-71.9780!3d-13.5171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91425d3f5c7e6f3b%3A0x0!2sKiskapata%20287%2C%20Cusco%2008003%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1690000000000"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.45990794261797!2d-71.97418624702314!3d-13.513575635517789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd7f8635659b7%3A0x79aada17082e0e29!2sK'intuchay!5e0!3m2!1ses-419!2spe!4v1785962125775!5m2!1ses-419!2spe"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
+        referrerpolicy="no-referrer-when-downgrade"
+      >
       </iframe>
       <div class="map-actions">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Kiskapata+287,+Cusco,+Peru"
-        target="_blank"
-        class="map-button"
-        data-lang="map">
+        <a href="#" class="map-button" data-lang="map.google" onclick="event.preventDefault(); playLeafAnimation('https://www.google.com/maps/dir/?api=1&destination=Kintuchay,+Kiskapata,+Cusco')">
+        </a>
+        <a href="#" class="map-button" data-lang="map.waze" onclick="event.preventDefault(); playLeafAnimation('https://waze.com/ul?q=Kintuchay%20Kiskapata%20Cusco&navigate=yes')">
         </a>
       </div>
     </div>
     <div class="custom-scrollbar">
       <div class="thumb"></div>
+    </div>
+    <div id="leaf-overlay">
+      <div class="contenedor">
+        <img src="assets/leaf_load/sprite1.svg" id="leaf1" class="leaf" alt="Leaf1" />
+        <img src="assets/leaf_load/sprite2.svg" id="leaf2" class="leaf" alt="Leaf2" />
+        <img src="assets/leaf_load/sprite3.svg" id="leaf3" class="leaf" alt="Leaf3" />
+      </div>
     </div>
     <script src="libraries/smooth-scroll.js"></script>
     <script src="meta-data.js"></script>

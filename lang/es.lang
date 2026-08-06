@@ -10,4 +10,5 @@ section_block.the_magic_of_food.description=La comida es una experiencia que tra
 section_block.the_experience=LA EXPERIENCIA KINTUCHAY
 section_block.the_experience.description=Descubre un lugar donde la gastronomía peruana, la coctelería y la magia de Cusco se encuentran en un solo espacio. \nDisfruta lo mejor de nuestra comida nacional, preparada con sabores y productos que representan la riqueza del Perú, acompañada de una selecta propuesta de coctelería nacional e internacional, desde clásicos que nunca pasan de moda hasta creaciones pensadas para sorprender. \nY todo esto, en un escenario incomparable: un lugar único para contemplar la gran ciudad del Cusco en su máximo esplendor. Déjate envolver por una vista espectacular de la ciudad, contempla sus tejados, montañas y atardeceres mientras compartes una buena mesa y una excelente bebida.
 
-map=Ver recorrido en Google Maps
+map.google=Ver recorrido en Google Maps
+map.waze=Ver recorrido en Waze
