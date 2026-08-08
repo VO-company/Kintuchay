@@ -5,26 +5,26 @@
     <title>Kintuchay Restobar</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="code.css" />
-    <link rel="image" href="assets/background/lb.png" />
-    <link rel="image" href="assets/background/db.png" />
     <style>
       body.light-mode {
         background-color: rgb(206, 206, 206);
-        background-image: url("assets/background/lb.png");
-        background-size: 100% 100%;
+        background-image: url("assets/background/lb.webp");
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-attachment: fixed;
       }
       body.dark-mode {
         background-color: rgb(41, 41, 41);
-        background-image: url("assets/background/db.png");
-        background-size: 100% 100%;
+        background-image: url("assets/background/db.webp");
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-attachment: fixed;
       }
     </style>
   </head>
-  <body style="margin: 0; font-family: Arial, sans-serif" data-smooth-scroll data-smooth="0.08">
+  <body data-smooth-scroll data-smooth="0.08">
     <div class="top-bar">
       <div class="menu-box">
         <span></span>
@@ -57,9 +57,25 @@
       >
       </iframe>
       <div class="map-actions">
-        <a href="#" class="map-button" data-lang="map.google" onclick="event.preventDefault(); playLeafAnimation('https://www.google.com/maps/dir/?api=1&destination=Kintuchay,+Kiskapata,+Cusco')">
+        <a
+          href="#"
+          class="map-button"
+          data-lang="map.google"
+          onclick="
+            event.preventDefault();
+            playLeafAnimation('https://www.google.com/maps/dir/?api=1&destination=Kintuchay,+Kiskapata,+Cusco');
+          "
+        >
         </a>
-        <a href="#" class="map-button" data-lang="map.waze" onclick="event.preventDefault(); playLeafAnimation('https://waze.com/ul?q=Kintuchay%20Kiskapata%20Cusco&navigate=yes')">
+        <a
+          href="#"
+          class="map-button"
+          data-lang="map.waze"
+          onclick="
+            event.preventDefault();
+            playLeafAnimation('https://waze.com/ul?q=Kintuchay%20Kiskapata%20Cusco&navigate=yes');
+          "
+        >
         </a>
       </div>
     </div>
@@ -73,6 +89,84 @@
         <img src="assets/leaf_load/sprite3.svg" id="leaf3" class="leaf" alt="Leaf3" />
       </div>
     </div>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="assets/footer/icon.svg" alt="Icono Footer" />
+        </div>
+        <div class="footer-contacts">
+          <h2 data-lang="footer.contacts"></h2>
+          <div class="number_tell">
+            <h3 data-lang="footer.tell"></h3>
+            <a
+              href="#"
+              onclick="
+                event.preventDefault();
+                playLeafAnimation('tel:+51916669799');
+              "
+              >(+51) 916 669 799</a
+            >
+            <a
+              href="#"
+              onclick="
+                event.preventDefault();
+                playLeafAnimation('tel:+51993489932');
+              "
+              >(+51) 993 489 932</a
+            >
+          </div>
+          <div class="social-buttons">
+            <a
+              href="#"
+              class="facebook"
+              onclick="
+                event.preventDefault();
+                playLeafAnimation('https://www.facebook.com/kintuchay.restobar.5?locale');
+              "
+            >
+              <img src="assets/footer/networks/facebook.svg" alt="Facebook" />
+            </a>
+            <a
+              href="#"
+              class="instagram"
+              onclick="
+                event.preventDefault();
+                playLeafAnimation('https://www.instagram.com/kintuchay_restobar/');
+              "
+            >
+              <img src="assets/footer/networks/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="#"
+              class="tripadvisor"
+              onclick="
+                event.preventDefault();
+                playLeafAnimation(
+                  'https://www.tripadvisor.com.pe/Restaurant_Review-g294314-d23463209-Reviews-Kintuchay-Cusco_Cusco_Region.html',
+                );
+              "
+            >
+              <img src="assets/footer/networks/tripadvisor.svg" alt="Tripadvisor" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-more">
+          <a
+            href="#"
+            target="_blank"
+            data-lang="footer.direction"
+            onclick="
+              event.preventDefault();
+              playLeafAnimation('https://maps.app.goo.gl/6MCPi6C8sXKxGMWF9');
+            "
+          ></a>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p class="footer-rights" data-lang="footer.rights"></p>
+        <p class="wave-text" data-lang="footer.slogan"></p>
+      </div>
+    </footer>
     <script src="libraries/smooth-scroll.js"></script>
     <script src="meta-data.js"></script>
     <script src="code.js"></script>

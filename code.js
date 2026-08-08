@@ -35,6 +35,7 @@ async function applyLang(file) {
       el.textContent = value;
     }
   });
+  applySloganWave();
 }
 let currentLang = detectLanguage();
 const langToggle = document.getElementById("lang-toggle");
@@ -135,7 +136,7 @@ window.addEventListener("load", () => {
 });
 
 /* LEAF LOAD */
-function playLeafAnimation(url) {
+function playLeafAnimation(url, newTab = true) {
   const overlay = document.getElementById("leaf-overlay");
   const leaf1 = document.getElementById("leaf1");
   const leaf2 = document.getElementById("leaf2");
@@ -146,16 +147,32 @@ function playLeafAnimation(url) {
   leaf3.classList.remove("anim3");
   void leaf1.offsetWidth;
   leaf1.classList.add("anim1");
-  leaf1.addEventListener("animationend", () => {
-    leaf2.classList.add("anim2");
-  }, { once:true });
-  leaf2.addEventListener("animationend", () => {
-    leaf3.classList.add("anim3");
-  }, { once:true });
-  leaf3.addEventListener("animationend", () => {
-    overlay.style.display = "none";
-    window.open(url, "_blank");
-  }, { once:true });
+  leaf1.addEventListener(
+    "animationend",
+    () => {
+      leaf2.classList.add("anim2");
+    },
+    { once: true }
+  );
+  leaf2.addEventListener(
+    "animationend",
+    () => {
+      leaf3.classList.add("anim3");
+    },
+    { once: true }
+  );
+  leaf3.addEventListener(
+    "animationend",
+    () => {
+      overlay.style.display = "none";
+      if (newTab) {
+        window.open(url, "_blank");
+      } else {
+        window.location.href = url;
+      }
+    },
+    { once: true }
+  );
 }
 
 /* TOP-BAR */
@@ -449,6 +466,22 @@ async function renderSections() {
     }
     sectionContainer.appendChild(sectionBlock);
     container.appendChild(sectionContainer);
+  });
+}
+
+/* FOOTER */
+function applySloganWave() {
+  const slogan = document.querySelector(".wave-text");
+  if (!slogan) return;
+
+  const text = slogan.textContent;
+  slogan.innerHTML = "";
+
+  [...text].forEach((char, index) => {
+    const span = document.createElement("span");
+    span.style.setProperty("--i", index + 1);
+    span.textContent = char === " " ? "\u00A0" : char;
+    slogan.appendChild(span);
   });
 }
 
