@@ -1,4 +1,5 @@
 ui.welcome=Bienvenidos a KINTUCHAY
+ui.menu=LOS MENÙS
 ui.map=UBICACIÓN KINTUCHAY
 ui.languaje=Idioma:
 ui.mode = Modo de interfaz:
@@ -14,6 +15,10 @@ section_block.information.description=
 
 map.google=Ver recorrido en Google Maps
 map.waze=Ver recorrido en Waze
+
+menu=MENÙ
+menu.food=COMIDAS
+menu.drinks=BEBIDAS
 
 footer.contacts=Contactos
 footer.tell=Telefono:

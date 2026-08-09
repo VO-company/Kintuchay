@@ -217,16 +217,12 @@ async function renderMenuOptions() {
   const menuList = document.getElementById("menu-options");
   if (!menuList) return;
   menuList.innerHTML = "";
-
-  // 👉 Secciones dinámicas
   sectionBlocks.forEach((block) => {
     const optionContainer = document.createElement("div");
     optionContainer.classList.add("option", "section_block");
-
     const optionTitle = document.createElement("div");
     optionTitle.setAttribute("data-lang", `section_block.${block.key}`);
     optionTitle.classList.add("option-title");
-
     optionTitle.addEventListener("click", () => {
       const target = document.querySelector(`.section-container[data-key="${block.key}"]`);
       if (target) {
@@ -239,15 +235,27 @@ async function renderMenuOptions() {
         closeMenu();
       }
     });
-
     optionContainer.appendChild(optionTitle);
     menuList.appendChild(optionContainer);
   });
-
-  // 👉 Contenedor Ubicación
+  const menuTitleOption = document.createElement("div");
+  menuTitleOption.classList.add("option", "section_block");
+  menuTitleOption.setAttribute("data-lang", "ui.menu");
+  menuTitleOption.addEventListener("click", () => {
+    const target = document.querySelector(".menus-container");
+    if (target) {
+      const top = target.offsetTop;
+      if (isTouchDevice) {
+        window.scrollTo({ top, behavior: "smooth" });
+      } else {
+        SmoothScroll.scrollTo(0, top);
+      }
+      closeMenu();
+    }
+  });
+  menuList.appendChild(menuTitleOption);
   const locationContainer = document.createElement("div");
   locationContainer.classList.add("option", "location");
-
   const locationTitle = document.createElement("div");
   locationTitle.setAttribute("data-lang", "ui.map");
   locationTitle.classList.add("option-title");
@@ -264,8 +272,6 @@ async function renderMenuOptions() {
     }
   });
   locationContainer.appendChild(locationTitle);
-
-  // Subopción Google Maps
   const googleSub = document.createElement("div");
   googleSub.classList.add("suboption", "google");
   googleSub.setAttribute("data-lang", "map.google");
@@ -273,8 +279,6 @@ async function renderMenuOptions() {
     playLeafAnimation("https://www.google.com/maps/dir/?api=1&destination=K'intuchay,+Kiskapata,+Cusco");
     closeMenu();
   });
-
-  // Subopción Waze
   const wazeSub = document.createElement("div");
   wazeSub.classList.add("suboption", "waze");
   wazeSub.setAttribute("data-lang", "map.waze");
@@ -282,24 +286,17 @@ async function renderMenuOptions() {
     playLeafAnimation("https://waze.com/ul?q=Kintuchay%20Kiskapata%20Cusco&navigate=yes");
     closeMenu();
   });
-
   locationContainer.appendChild(googleSub);
   locationContainer.appendChild(wazeSub);
-
   menuList.appendChild(locationContainer);
-
-  // 👉 Separador
   const separator = document.createElement("hr");
   separator.classList.add("menu_separator");
   menuList.appendChild(separator);
-
-  // 👉 Contenedor Idioma
   const langContainer = document.createElement("div");
   langContainer.classList.add("option", "languaje");
   const langLabel = document.createElement("div");
   langLabel.setAttribute("data-lang", "ui.languaje");
   langContainer.appendChild(langLabel);
-
   const langButton = document.createElement("button");
   langButton.classList.add("button", "languaje_select");
   const languageName = languages[currentLang];
@@ -318,20 +315,16 @@ async function renderMenuOptions() {
   });
   langContainer.appendChild(langButton);
   menuList.appendChild(langContainer);
-
-  // 👉 Contenedor Modo
   const modeContainer = document.createElement("div");
   modeContainer.classList.add("option", "web_mode");
   const modeLabel = document.createElement("div");
   modeLabel.setAttribute("data-lang", "ui.mode");
   modeContainer.appendChild(modeLabel);
-
   const modeSwitch = document.createElement("div");
   modeSwitch.classList.add("switch", "mode_select");
   const slider = document.createElement("span");
   slider.classList.add("slider");
   modeSwitch.appendChild(slider);
-
   if (document.body.classList.contains("dark-mode")) {
     modeSwitch.classList.add("active");
   }
@@ -347,8 +340,6 @@ async function renderMenuOptions() {
   });
   modeContainer.appendChild(modeSwitch);
   menuList.appendChild(modeContainer);
-
-  // 👉 Aplica traducciones
   applyLang(`lang/${currentLang}.lang`);
 }
 
@@ -469,19 +460,60 @@ async function renderSections() {
   });
 }
 
+/* MENUS */
+const pdfLinks = {
+  foods: {
+    es: "https://drive.google.com/file/d/1dvDgEdPGmGBIRWj1c7VWl6x1P2asIeWJ/view?usp=sharing",
+    en: "https://drive.google.com/file/d/1_K2Xs_e5G38a0Rlj0_Y6s9JWBbz87j2J/view?usp=sharing"
+  },
+  drinks: {
+    es: "https://drive.google.com/file/d/1MBR9qZE1FdmV8dBfpZqi2P6wpkf9gzQo/view?usp=sharing",
+    en: "https://drive.google.com/file/d/1ymJ3xn7dcGC483Td90GM88VfK9uUw4e6/view?usp=sharing"
+  }
+};
+document.addEventListener("DOMContentLoaded", () => {
+  const foodBtn = document.querySelector(".menu-btn.food");
+  const drinksBtn = document.querySelector(".menu-btn.drinks");
+  if (foodBtn) {
+    foodBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const url = pdfLinks.foods[currentLang] || pdfLinks.foods[languages.default_lang];
+      playLeafAnimation(url, true);
+    });
+  }
+  if (drinksBtn) {
+    drinksBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const url = pdfLinks.drinks[currentLang] || pdfLinks.drinks[languages.default_lang];
+      playLeafAnimation(url, true);
+    });
+  }
+});
+
 /* FOOTER */
 function applySloganWave() {
   const slogan = document.querySelector(".wave-text");
   if (!slogan) return;
-
-  const text = slogan.textContent;
+  const text = slogan.textContent.trim();
   slogan.innerHTML = "";
-
-  [...text].forEach((char, index) => {
-    const span = document.createElement("span");
-    span.style.setProperty("--i", index + 1);
-    span.textContent = char === " " ? "\u00A0" : char;
-    slogan.appendChild(span);
+  let charIndex = 1;
+  text.split(/(\s+)/).forEach((part) => {
+    if (/^\s+$/.test(part)) {
+      const space = document.createElement("span");
+      space.classList.add("slogan-space");
+      space.textContent = "\u00A0";
+      slogan.appendChild(space);
+      return;
+    }
+    const word = document.createElement("span");
+    word.classList.add("slogan-word");
+    [...part].forEach((char) => {
+      const letter = document.createElement("span");
+      letter.style.setProperty("--i", charIndex++);
+      letter.textContent = char;
+      word.appendChild(letter);
+    });
+    slogan.appendChild(word);
   });
 }
 
