@@ -1,0 +1,39 @@
+{
+  "languages": {
+    "es": "ESPAÑOL",
+    "en": "ENGLISH"
+  },
+  "defaultLang": "en",
+  "sectionBlocks": [
+    {
+      "model": "b1",
+      "key": "the_magic_of_food",
+      "image": "assets/section_blocks/image1.webp"
+    },
+    {
+      "model": "b2",
+      "key": "the_experience",
+      "image": "assets/section_blocks/image2.webp"
+    }
+  ],
+  "siteLinks": {
+    "google": "https://www.google.com/maps/dir/?api=1&destination=-13.5135756,-71.9741862",
+    "waze": "https://waze.com/ul?ll=-13.5135756,-71.9741862&navigate=yes",
+    "maps_short": "https://maps.app.goo.gl/6MCPi6C8sXKxGMWF9",
+    "tel1": "https://wa.me/51916669799",
+    "tel2": "https://wa.me/51993489932",
+    "facebook": "https://www.facebook.com/kintuchay.restobar.5?locale",
+    "instagram": "https://www.instagram.com/kintuchay_restobar/",
+    "tripadvisor": "https://www.tripadvisor.com.pe/Restaurant_Review-g294314-d23463209-Reviews-Kintuchay-Cusco_Cusco_Region.html"
+  },
+  "menuLinks": {
+    "foods": {
+      "es": "Comidas/index.html",
+      "en": "foods/index.html"
+    },
+    "drinks": {
+      "es": "Bebidas/index.html",
+      "en": "drinks/index.html"
+    }
+  }
+}

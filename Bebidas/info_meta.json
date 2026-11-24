@@ -1,0 +1,527 @@
+{
+  "menu_format": {
+    "parts": [
+      {
+        "name": "Cócteles Kintuchay",
+        "columns": 2,
+        "products": [
+          {
+            "name": "K'intu-Sour",
+            "description": "Sour de la casa aromatizado con hierbas andinas y ligeros toques cítricos.",
+            "price": "25.00"
+          },
+          {
+            "name": "Uchu",
+            "description": "Cóctel elaborado con nuestro destilado nacional, de placenteros aromas frutales y mentolados.",
+            "price": "25.00"
+          },
+          {
+            "name": "Hayaq",
+            "description": "Aromas intensos y frescos, mezclados con rones especiados y un sutil toque amargo final.",
+            "price": "25.00"
+          },
+          {
+            "name": "Miski",
+            "description": "De sabor fresco e intenso a frutos rojos, con aromas a piña y cítricos esta bebida deleitará tu paladar.",
+            "price": "25.00"
+          },
+          {
+            "name": "Sumaq",
+            "description": "Cóctel sin alcohol con una armoniosa combinación de hierba luisa, piña y zumo fresco de frutos cítricos.",
+            "price": "18.00"
+          },
+          {
+            "name": "Q'ora",
+            "description": "Aromas herbales y cítricos se juntan en esta bebida para brindarte una placentera experiencia.",
+            "price": "25.00"
+          }
+        ]
+      },
+      {
+        "name": "Piteados",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Clásico",
+            "description": "Té puro, pisco, miel, limón, kión."
+          },
+          {
+            "name": "Emoliente",
+            "description": "Cebada, airampo, membrillo, manzanilla, pisco, hierbas aromáticas, flor de Jamaica."
+          },
+          {
+            "name": "Andino",
+            "description": "Hierbas andinas, pisco, miel, limón."
+          },
+          {
+            "name": "Naranja",
+            "description": "Té, canela, clavo, pisco, naranja, kion, albaca."
+          },
+          {
+            "name": "Presentaciones",
+            "columns": 1,
+            "variants": [
+              {
+                "name": "Tetera",
+                "price": "22.00"
+              },
+              {
+                "name": "Vaso Chopp",
+                "price": "15.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cócteles Clásicos",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Piña Colada",
+            "description": "Ron, piña, crema de coco.",
+            "price": "20.00"
+          },
+          {
+            "name": "Fernet Con Cola",
+            "description": "Fernet, Coca-Cola.",
+            "price": "20.00"
+          },
+          {
+            "name": "Mojito",
+            "description": "Ron, hierbabuena, limón, agua mineral con gas.",
+            "price": "19.00"
+          },
+          {
+            "name": "Screwdriver",
+            "description": "Vodka, naranja.",
+            "price": "18.00"
+          },
+          {
+            "name": "Mojito de Maracuyá",
+            "description": "Ron, maracuyá, hierbabuena, agua mineral con gas.",
+            "price": "22.00"
+          },
+          {
+            "name": "Margarita",
+            "description": "Tequila, triple sec, limón.",
+            "price": "20.00"
+          },
+          {
+            "name": "Negroni",
+            "description": "Gin, campari, vermouth rosso.",
+            "price": "23.00"
+          },
+          {
+            "name": "Blue Margarita",
+            "description": "Tequila, curazao azul, limón.",
+            "price": "20.00"
+          },
+          {
+            "name": "Bramble",
+            "description": "Gin, licor de moras, limón.",
+            "price": "20.00"
+          },
+          {
+            "name": "Cuba Libre",
+            "description": "Ron, Coca-Cola, limón.",
+            "price": "18.00"
+          },
+          {
+            "name": "Tequila Sunrise",
+            "description": "Tequila, granadina, naranja.",
+            "price": "20.00"
+          },
+          {
+            "name": "Ruso Negro",
+            "description": "Vodka, licor de café.",
+            "price": "18.00"
+          },
+          {
+            "name": "Daiquiri",
+            "description": "Ron, limón, jarabe de goma.",
+            "price": "18.00"
+          },
+          {
+            "name": "Ruso Blanco",
+            "description": "Vodka, licor de café, leche.",
+            "price": "20.00"
+          },
+          {
+            "name": "Daiquiri de Fresa",
+            "description": "Ron, fresas, limón, jarabe de goma.",
+            "price": "20.00"
+          },
+          {
+            "name": "Sex On The Beach",
+            "description": "Vodka, licor de durazno, naranja, jugo de arándanos.",
+            "price": "19.00"
+          },
+          {
+            "name": "Daiquiri de Maracuyá",
+            "description": "Ron, maracuyá, jarabe de goma.",
+            "price": "20.00"
+          },
+          {
+            "name": "Orgasmo",
+            "description": "Baileys, licor de café, licor de almendras.",
+            "price": "20.00"
+          },
+          {
+            "name": "Caipirinha",
+            "description": "Cachaça, limón, azúcar.",
+            "price": "18.00"
+          },
+          {
+            "name": "Amaretto Sour",
+            "description": "Licor de almendras, limón, naranja, clara de huevo.",
+            "price": "19.00"
+          },
+          {
+            "name": "Cosmopolitan",
+            "description": "Vodka, triple sec, jugo de arándanos.",
+            "price": "20.00"
+          },
+          {
+            "name": "Martini de Manzana",
+            "description": "Vodka, licor de manzana, zumo de lima.",
+            "price": "20.00"
+          },
+          {
+            "name": "Manhattan",
+            "description": "Bourbon, vermouth rosso, angostura bitter.",
+            "price": "23.00"
+          },
+          {
+            "name": "Blue Lagoon",
+            "description": "Vodka, curazao azul, limón, Sprite.",
+            "price": "18.00"
+          },
+          {
+            "name": "Whisky Sour",
+            "description": "Bourbon, limón, jarabe de goma, clara de huevo.",
+            "price": "25.00"
+          },
+          {
+            "name": "Boulevardier",
+            "description": "Bourbon, campari, vermouth rosso.",
+            "price": "23.00"
+          }
+        ]
+      },
+      {
+        "name": "Pisco Sour",
+        "columns": 1,
+        "products": [
+          {
+            "description": "El icónico cóctel peruano que combina Pisco (aguardiente de uva), jugo de limón, jarabe de goma, clara de huevo y bitter de Angostura, resultando en una bebida espumosa, cremosa y refrescante con notas cítricas y un equilibrio dulce-ácido perfecto.",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "Clásico (limón)",
+                "price": "20.00"
+              },
+              {
+                "name": "Maracuyá",
+                "price": "20.00"
+              },
+              {
+                "name": "Fresa",
+                "price": "20.00"
+              },
+              {
+                "name": "Aguaymanto",
+                "price": "20.00"
+              },
+              {
+                "name": "Kiwi",
+                "price": "20.00"
+              },
+              {
+                "name": "Tuna",
+                "price": "20.00"
+              },
+              {
+                "name": "Muña",
+                "price": "20.00"
+              },
+              {
+                "name": "Hierba Luisa",
+                "price": "20.00"
+              },
+              {
+                "name": "Coca",
+                "price": "20.00"
+              },
+              {
+                "name": "Eucalipto",
+                "price": "20.00"
+              },
+              {
+                "name": "Chicha Morada",
+                "price": "20.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chilcanos",
+        "columns": 1,
+        "products": [
+          {
+            "description": "Una mezcla refrescante y burbujeante de pisco (aguardiente de uva), ginger ale, jugo de limón fresco y unas gotas de amargo de Angostura, servido en vaso alto con hielo, también tiene variantes de muchos sabores.",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "Clásico (limón)",
+                "price": "18.00"
+              },
+              {
+                "name": "Maracuyá",
+                "price": "18.00"
+              },
+              {
+                "name": "Fresa",
+                "price": "18.00"
+              },
+              {
+                "name": "Aguaymanto",
+                "price": "18.00"
+              },
+              {
+                "name": "Kiwi",
+                "price": "18.00"
+              },
+              {
+                "name": "Tuna",
+                "price": "18.00"
+              },
+              {
+                "name": "Muña",
+                "price": "18.00"
+              },
+              {
+                "name": "Hierba Luisa",
+                "price": "18.00"
+              },
+              {
+                "name": "Coca",
+                "price": "18.00"
+              },
+              {
+                "name": "Eucalipto",
+                "price": "18.00"
+              },
+              {
+                "name": "Chicha Morada",
+                "price": "18.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Peruanazos",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Algarrobina",
+            "description": "Pisco, algarrobina, licor de cacao, leche.",
+            "price": "19.00"
+          },
+          {
+            "name": "Machu Picchu",
+            "description": "Pisco, licor de menta, naranja, granadina.",
+            "price": "18.00"
+          },
+          {
+            "name": "Pisco Tonic",
+            "description": "Pisco, agua tónica, piel de limón.",
+            "price": "20.00"
+          },
+          {
+            "name": "Capitán",
+            "description": "Pisco, vermouth rosso, angostura bitter.",
+            "price": "22.00"
+          },
+          {
+            "name": "Pisco Punch",
+            "description": "Pisco, piña, limón, jarabe de goma, soda.",
+            "price": "21.00"
+          },
+          {
+            "name": "Pisco Mule",
+            "description": "Pisco, limón, jarabe de kión, cerveza de jengibre.",
+            "price": "22.00"
+          },
+          {
+            "name": "Perú Libre",
+            "description": "Pisco, Coca-Cola, limón.",
+            "price": "18.00"
+          }
+        ]
+      },
+      {
+        "name": "Gin Tonics",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Clásico",
+            "description": "Gin, agua tónica, piel de lima.",
+            "price": "20.00"
+          },
+          {
+            "name": "Pepino",
+            "description": "Gin, agua tónica, piel de pepino.",
+            "price": "22.00"
+          },
+          {
+            "name": "Frutos Rojos",
+            "description": "Gin, agua tónica, fresas, arándanos, moras.",
+            "price": "23.00"
+          },
+          {
+            "name": "Aromático",
+            "description": "Gin, agua tónica, canela, anís estrella.",
+            "price": "22.00"
+          }
+        ]
+      },
+      {
+        "name": "Cervezas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Cusqueña",
+            "variants": [
+              {
+                "name": "310 ml",
+                "price": "10.00"
+              },
+              {
+                "name": "620 ml",
+                "price": "16.00"
+              }
+            ],
+            "options": [
+              "Dorada",
+              "Trigo",
+              "Malta"
+            ]
+          },
+          {
+            "name": "Corona (310 ml)",
+            "price": "14.00"
+          },
+          {
+            "name": "Cervezas Artesanales",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "IPA",
+                "price": "18.00"
+              },
+              {
+                "name": "Pale ale",
+                "price": "18.00"
+              },
+              {
+                "name": "Porter",
+                "price": "18.00"
+              },
+              {
+                "name": "Red ale",
+                "price": "18.00"
+              },
+              {
+                "name": "Witbier",
+                "price": "18.00"
+              },
+              {
+                "name": "Quadrupel",
+                "price": "18.00"
+              },
+              {
+                "name": "Belgian Golden Strong Ale",
+                "price": "18.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Whisky",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Clásicos (vaso)",
+            "variants": [
+              {
+                "name": "J.W. Red Label",
+                "price": "22.00"
+              },
+              {
+                "name": "Jack Daniel's",
+                "price": "25.00"
+              },
+              {
+                "name": "J.W. Black Label",
+                "price": "25.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vinos",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Vinos Secos (botella)",
+            "variants": [
+              {
+                "name": "Intipalka",
+                "price": "80.00"
+              },
+              {
+                "name": "Estancia Mendoza",
+                "price": "80.00"
+              },
+              {
+                "name": "Casillero del Diablo",
+                "price": "80.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shots",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Tequila",
+            "price": "18.00"
+          },
+          {
+            "name": "Jägermeister",
+            "price": "18.00"
+          },
+          {
+            "name": "B-52",
+            "price": "17.00"
+          },
+          {
+            "name": "Cucaracha",
+            "price": "15.00"
+          },
+          {
+            "name": "Fernet",
+            "price": "18.00"
+          }
+        ]
+      }
+    ]
+  }
+}

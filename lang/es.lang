@@ -1,0 +1,46 @@
+ui.welcome=Bienvenidos a KINTUCHAY
+ui.menu=LOS MENÚS
+ui.map=UBICACIÓN KINTUCHAY
+ui.language=Idioma:
+ui.mode = Modo de interfaz:
+ui.menu_button=Abrir o cerrar el menú
+ui.lang_button=Cambiar idioma
+ui.scroll_down=Bajar al contenido
+ui.nav=Navegación principal
+ui.back=Volver al inicio
+
+meta.title=Kintuchay Restobar | Cocina peruana y coctelería en Cusco
+meta.description=Gastronomía peruana, coctelería y una vista espectacular de Cusco. Calle Kiskapata 287, Mirador San Blas. Mira nuestras cartas y cómo llegar.
+meta.foods_title=Carta de comidas | Kintuchay Restobar
+meta.foods_description=Carta de comidas de Kintuchay Restobar en Cusco: platos de fondo, piqueos, sándwiches, hamburguesas, opciones vegetarianas y más.
+meta.drinks_title=Carta de bebidas | Kintuchay Restobar
+meta.drinks_description=Carta de bebidas de Kintuchay Restobar en Cusco: cócteles de autor y clásicos, pisco sour, chilcanos, gin tonics, cervezas, whisky, vinos y shots.
+
+alt.banner=Fachada de Kintuchay Restobar con un doble arcoíris sobre el cielo de Cusco
+alt.the_magic_of_food=Plato de alitas glaseadas con papas fritas y cebollita china
+alt.the_experience=Vista de los tejados y las montañas de Cusco desde una mesa de Kintuchay
+map.title=Mapa con la ubicación de Kintuchay Restobar
+
+selected_language=Seleccionaste
+
+section_block.the_magic_of_food=LA MAGIA DE LA COMIDA
+section_block.the_magic_of_food.description=La comida es una experiencia que trasciende el instante. No comienza en el plato ni termina en el último bocado. Vive en aquello que nos reúne, en lo que heredamos y en lo que transformamos. \nCada encuentro alrededor de una mesa es también un encuentro de historias, de lugares y de memorias. Nada permanece igual: todo se mezcla, se transforma y adquiere un nuevo significado. \nQuizá por eso comer sea una forma de viajar sin partir, de reconocer lo conocido desde una nueva mirada y de descubrir aquello que aún no sabíamos que buscábamos. \nPorque al final, no recordamos solamente lo que comimos, sino aquello que sentimos mientras lo vivimos.
+section_block.the_experience=LA EXPERIENCIA KINTUCHAY
+section_block.the_experience.description=Descubre un lugar donde la gastronomía peruana, la coctelería y la magia de Cusco se encuentran en un solo espacio. \nDisfruta lo mejor de nuestra comida nacional, preparada con sabores y productos que representan la riqueza del Perú, acompañada de una selecta propuesta de coctelería nacional e internacional, desde clásicos que nunca pasan de moda hasta creaciones pensadas para sorprender. \nY todo esto, en un escenario incomparable: un lugar único para contemplar la gran ciudad del Cusco en su máximo esplendor. Déjate envolver por una vista espectacular de la ciudad, contempla sus tejados, montañas y atardeceres mientras compartes una buena mesa y una excelente bebida.
+section_block.information=INFORMACIÓN
+section_block.information.description=
+
+map.google=Ver recorrido en Google Maps
+map.waze=Ver recorrido en Waze
+
+menu=MENÚ
+menu.food=COMIDAS
+menu.drinks=BEBIDAS
+menu_page.foods_heading=Carta de comidas
+menu_page.drinks_heading=Carta de bebidas
+
+footer.contacts=Contactos
+footer.tell=WhatsApp:
+footer.direction=Calle Kiskapata N° 287 \nReferencia: Mirador San Blas \nCusco - Perú
+footer.rights=© 2026 Kintuchay Restobar. Todos los derechos reservados.
+footer.slogan=¡Sabores que cautivan, experiencias que perduran!

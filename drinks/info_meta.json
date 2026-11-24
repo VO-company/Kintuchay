@@ -1,0 +1,527 @@
+{
+  "menu_format": {
+    "parts": [
+      {
+        "name": "Kintuchay Cocktails",
+        "columns": 2,
+        "products": [
+          {
+            "name": "K'intu-Sour",
+            "description": "House sour flavored with Andean herbs and light citrus notes.",
+            "price": "25.00"
+          },
+          {
+            "name": "Uchu",
+            "description": "Cocktail made with our national spirit with pleasant fruity and minty aromas.",
+            "price": "25.00"
+          },
+          {
+            "name": "Hayaq",
+            "description": "Intense and fresh aromas blended with spiced rums and a subtle bitter finish.",
+            "price": "25.00"
+          },
+          {
+            "name": "Miski",
+            "description": "Fresh and intense red fruit flavor, with pineapple and citrus aromas to delight your palate.",
+            "price": "25.00"
+          },
+          {
+            "name": "Sumaq",
+            "description": "Non-alcoholic cocktail with a harmonious mix of lemon verbena, pineapple, and fresh citrus juice.",
+            "price": "18.00"
+          },
+          {
+            "name": "Q'ora",
+            "description": "Herbal and citrus aromas come together in this drink to give you a pleasant experience.",
+            "price": "25.00"
+          }
+        ]
+      },
+      {
+        "name": "Piteados",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Classic",
+            "description": "Pure tea, pisco, honey, lemon, ginger."
+          },
+          {
+            "name": "Emollient",
+            "description": "Barley, airampo, quince, chamomile, pisco, aromatic herbs, hibiscus flower."
+          },
+          {
+            "name": "Andean",
+            "description": "Andean herbs, pisco, honey, lemon."
+          },
+          {
+            "name": "Orange",
+            "description": "Tea, cinnamon, clove, pisco, orange, ginger, basil."
+          },
+          {
+            "name": "Servings",
+            "columns": 1,
+            "variants": [
+              {
+                "name": "Teapot",
+                "price": "22.00"
+              },
+              {
+                "name": "Chopp glass",
+                "price": "15.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Classic Cocktails",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Piña Colada",
+            "description": "Rum, pineapple, coconut cream.",
+            "price": "20.00"
+          },
+          {
+            "name": "Fernet & Coke",
+            "description": "Fernet, Coca-Cola.",
+            "price": "20.00"
+          },
+          {
+            "name": "Mojito",
+            "description": "Rum, mint, lemon, sparkling mineral water.",
+            "price": "19.00"
+          },
+          {
+            "name": "Screwdriver",
+            "description": "Vodka, orange.",
+            "price": "18.00"
+          },
+          {
+            "name": "Passion Fruit Mojito",
+            "description": "Rum, passion fruit, mint, sparkling mineral water.",
+            "price": "22.00"
+          },
+          {
+            "name": "Margarita",
+            "description": "Tequila, triple sec, lemon.",
+            "price": "20.00"
+          },
+          {
+            "name": "Negroni",
+            "description": "Gin, Campari, vermouth rosso.",
+            "price": "23.00"
+          },
+          {
+            "name": "Blue Margarita",
+            "description": "Tequila, blue curaçao, lemon.",
+            "price": "20.00"
+          },
+          {
+            "name": "Bramble",
+            "description": "Gin, blackberry liqueur, lemon.",
+            "price": "20.00"
+          },
+          {
+            "name": "Cuba Libre",
+            "description": "Rum, Coca-Cola, lemon.",
+            "price": "18.00"
+          },
+          {
+            "name": "Tequila Sunrise",
+            "description": "Tequila, grenadine, orange.",
+            "price": "20.00"
+          },
+          {
+            "name": "Black Russian",
+            "description": "Vodka, coffee liqueur.",
+            "price": "18.00"
+          },
+          {
+            "name": "Daiquiri",
+            "description": "Rum, lemon, sugar syrup.",
+            "price": "18.00"
+          },
+          {
+            "name": "White Russian",
+            "description": "Vodka, coffee liqueur, milk.",
+            "price": "20.00"
+          },
+          {
+            "name": "Strawberry Daiquiri",
+            "description": "Rum, strawberries, lemon, sugar syrup.",
+            "price": "20.00"
+          },
+          {
+            "name": "Sex On The Beach",
+            "description": "Vodka, peach liqueur, orange, cranberry juice.",
+            "price": "19.00"
+          },
+          {
+            "name": "Passion Fruit Daiquiri",
+            "description": "Rum, passion fruit, sugar syrup.",
+            "price": "20.00"
+          },
+          {
+            "name": "Orgasm",
+            "description": "Baileys, coffee liqueur, almond liqueur.",
+            "price": "20.00"
+          },
+          {
+            "name": "Caipirinha",
+            "description": "Cachaça, lemon, sugar.",
+            "price": "18.00"
+          },
+          {
+            "name": "Amaretto Sour",
+            "description": "Almond liqueur, lemon, orange, egg white.",
+            "price": "19.00"
+          },
+          {
+            "name": "Cosmopolitan",
+            "description": "Vodka, triple sec, cranberry juice.",
+            "price": "20.00"
+          },
+          {
+            "name": "Apple Martini",
+            "description": "Vodka, apple liqueur, lime juice.",
+            "price": "20.00"
+          },
+          {
+            "name": "Manhattan",
+            "description": "Bourbon, vermouth rosso, angostura bitter.",
+            "price": "23.00"
+          },
+          {
+            "name": "Blue Lagoon",
+            "description": "Vodka, blue curaçao, lemon, Sprite.",
+            "price": "18.00"
+          },
+          {
+            "name": "Whisky Sour",
+            "description": "Bourbon, lemon, sugar syrup, egg white.",
+            "price": "25.00"
+          },
+          {
+            "name": "Boulevardier",
+            "description": "Bourbon, Campari, vermouth rosso.",
+            "price": "23.00"
+          }
+        ]
+      },
+      {
+        "name": "Pisco Sour",
+        "columns": 1,
+        "products": [
+          {
+            "description": "The iconic Peruvian cocktail that combines pisco (grape brandy), fresh lime juice, simple syrup, egg white, and Angostura bitters, resulting in a frothy, creamy, and refreshing drink with bright citrus notes and a perfectly balanced sweet–tart profile.",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "Classic (lemon)",
+                "price": "20.00"
+              },
+              {
+                "name": "Passion Fruit",
+                "price": "20.00"
+              },
+              {
+                "name": "Strawberry",
+                "price": "20.00"
+              },
+              {
+                "name": "Aguaymanto",
+                "price": "20.00"
+              },
+              {
+                "name": "Kiwi",
+                "price": "20.00"
+              },
+              {
+                "name": "Tuna",
+                "price": "20.00"
+              },
+              {
+                "name": "Andean Mint",
+                "price": "20.00"
+              },
+              {
+                "name": "Lemon Verbena",
+                "price": "20.00"
+              },
+              {
+                "name": "Coca",
+                "price": "20.00"
+              },
+              {
+                "name": "Eucalyptus",
+                "price": "20.00"
+              },
+              {
+                "name": "Chicha Morada",
+                "price": "20.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chilcanos",
+        "columns": 1,
+        "products": [
+          {
+            "description": "A refreshing and sparkling mix of pisco (grape brandy), ginger ale, fresh lime juice, and a few drops of Angostura bitters, served in a tall glass with ice; it also has many flavor variations.",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "Classic (lemon)",
+                "price": "18.00"
+              },
+              {
+                "name": "Passion Fruit",
+                "price": "18.00"
+              },
+              {
+                "name": "Strawberry",
+                "price": "18.00"
+              },
+              {
+                "name": "Aguaymanto",
+                "price": "18.00"
+              },
+              {
+                "name": "Kiwi",
+                "price": "18.00"
+              },
+              {
+                "name": "Tuna",
+                "price": "18.00"
+              },
+              {
+                "name": "Andean Mint",
+                "price": "18.00"
+              },
+              {
+                "name": "Lemon Verbena",
+                "price": "18.00"
+              },
+              {
+                "name": "Coca",
+                "price": "18.00"
+              },
+              {
+                "name": "Eucalyptus",
+                "price": "18.00"
+              },
+              {
+                "name": "Chicha Morada",
+                "price": "18.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Peruvian Cocktails",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Algarrobina",
+            "description": "Pisco, algarrobina, cacao brown liqueur, milk.",
+            "price": "19.00"
+          },
+          {
+            "name": "Machu Picchu",
+            "description": "Pisco, mint liqueur, orange, grenadine.",
+            "price": "18.00"
+          },
+          {
+            "name": "Pisco Tonic",
+            "description": "Pisco, tonic water, lemon peel.",
+            "price": "20.00"
+          },
+          {
+            "name": "Capitan",
+            "description": "Pisco, vermouth rosso, angostura bitter.",
+            "price": "22.00"
+          },
+          {
+            "name": "Pisco Punch",
+            "description": "Pisco, pineapple, lemon, sugar syrup, soda.",
+            "price": "21.00"
+          },
+          {
+            "name": "Pisco Mule",
+            "description": "Pisco, lemon, ginger syrup, ginger beer.",
+            "price": "22.00"
+          },
+          {
+            "name": "Peru Libre",
+            "description": "Pisco, Coca-Cola, lemon.",
+            "price": "18.00"
+          }
+        ]
+      },
+      {
+        "name": "Gin Tonics",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Classic",
+            "description": "Gin, tonic water, lime peel.",
+            "price": "20.00"
+          },
+          {
+            "name": "Cucumber",
+            "description": "Gin, tonic water, cucumber peel.",
+            "price": "22.00"
+          },
+          {
+            "name": "Red Berries",
+            "description": "Gin, tonic water, strawberries, blueberries, blackberries.",
+            "price": "23.00"
+          },
+          {
+            "name": "Aromatic",
+            "description": "Gin, tonic water, cinnamon, star anise.",
+            "price": "22.00"
+          }
+        ]
+      },
+      {
+        "name": "Beers",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Cusqueña",
+            "variants": [
+              {
+                "name": "310 ml",
+                "price": "10.00"
+              },
+              {
+                "name": "620 ml",
+                "price": "16.00"
+              }
+            ],
+            "options": [
+              "Dorada",
+              "Trigo",
+              "Malta"
+            ]
+          },
+          {
+            "name": "Corona (310 ml)",
+            "price": "14.00"
+          },
+          {
+            "name": "Craft Beer",
+            "variantsColumns": 2,
+            "variants": [
+              {
+                "name": "IPA",
+                "price": "18.00"
+              },
+              {
+                "name": "Pale ale",
+                "price": "18.00"
+              },
+              {
+                "name": "Porter",
+                "price": "18.00"
+              },
+              {
+                "name": "Red ale",
+                "price": "18.00"
+              },
+              {
+                "name": "Witbier",
+                "price": "18.00"
+              },
+              {
+                "name": "Quadrupel",
+                "price": "18.00"
+              },
+              {
+                "name": "Belgian golden strong ale",
+                "price": "18.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Whisky",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Classics (Per glass)",
+            "variants": [
+              {
+                "name": "J.W. Red Label",
+                "price": "22.00"
+              },
+              {
+                "name": "Jack Daniel's",
+                "price": "25.00"
+              },
+              {
+                "name": "J.W. Black Label",
+                "price": "25.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wines",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Dry Wines (Per bottle)",
+            "variants": [
+              {
+                "name": "Intipalka",
+                "price": "80.00"
+              },
+              {
+                "name": "Estancia Mendoza",
+                "price": "80.00"
+              },
+              {
+                "name": "Casillero del Diablo",
+                "price": "80.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shots",
+        "columns": 2,
+        "products": [
+          {
+            "name": "Tequila",
+            "price": "18.00"
+          },
+          {
+            "name": "Jägermeister",
+            "price": "18.00"
+          },
+          {
+            "name": "B-52",
+            "price": "17.00"
+          },
+          {
+            "name": "Cucaracha",
+            "price": "15.00"
+          },
+          {
+            "name": "Fernet",
+            "price": "18.00"
+          }
+        ]
+      }
+    ]
+  }
+}

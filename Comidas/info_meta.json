@@ -1,0 +1,483 @@
+{
+  "menu_format": {
+    "parts": [
+      {
+        "name": "Platos de Fondo",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Lomo saltado",
+            "description": "Trozos de lomo, cebolla, ají amarillo, tomate, papas fritas, salsa de soja, arroz blanco.",
+            "price": "35.00"
+          },
+          {
+            "name": "Pollo saltado",
+            "description": "Trozos de pollo, cebolla, ají amarillo, tomate, papas fritas, salsa de soja, arroz blanco.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chaufa de lomo",
+            "description": "Trozos de lomo, arroz, pimiento, cebolla china, salchicha picada, tortilla de huevo, salsa de soja.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chaufa de pollo",
+            "description": "Trozos de pollo, arroz, pimiento, cebolla china, salchicha picada, tortilla de huevo, salsa de soja.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chaufa mixto",
+            "description": "Trozos de lomo, pollo, arroz, pimiento, cebolla china, salchicha picada, tortilla de huevo, salsa de soja.",
+            "price": "35.00"
+          },
+          {
+            "name": "Milanesa de pollo",
+            "description": "Filete de pollo apanado, ensalada de la casa, papas fritas, arroz blanco.",
+            "price": "30.00"
+          },
+          {
+            "name": "Filete de pollo a la Napolitana",
+            "description": "Filete de pollo, jamón pizza, queso Edam, salsa de tomate, albahaca; acompañado de papas fritas y ensalada de la casa.",
+            "price": "30.00"
+          },
+          {
+            "name": "Pollo a la plancha",
+            "description": "Filete de pollo, arroz blanco; acompañado de papas fritas y ensalada de la casa.",
+            "price": "30.00"
+          },
+          {
+            "name": "Bistec montado",
+            "description": "Carne de res, papas fritas, arroz blanco, huevo frito, ensalada de la casa.",
+            "price": "35.00"
+          },
+          {
+            "name": "Lomo de cerdo en salsa BBQ",
+            "description": "Lomo de cerdo en salsa BBQ; acompañado de papas fritas.",
+            "price": "35.00"
+          },
+          {
+            "name": "Churrasco al jugo",
+            "description": "Carne de res, papas fritas, cebolla, tomate, arroz blanco.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chuleta de cerdo a la plancha",
+            "description": "Chuleta de cerdo, arroz blanco; acompañado de papas fritas y ensalada de la casa.",
+            "price": "30.00"
+          },
+          {
+            "name": "Parrilla Kintuchay",
+            "description": "Una chuleta de cerdo, una pieza de pollo, un chorizo parrillero, anticucho de corazón, brocheta de pollo, papas andinas, ensalada fresca.",
+            "price": "65.00"
+          }
+        ]
+      },
+      {
+        "name": "Sopas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Dieta de pollo",
+            "description": "Sopa ligera con trozos de pollo, verduras, fideos.",
+            "price": "20.00"
+          }
+        ]
+      },
+      {
+        "name": "Piqueos",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Tequeños",
+            "description": "Tequeños rellenos de queso andino y salsa guacamole.",
+            "price": "17.00"
+          },
+          {
+            "name": "Alitas BBQ",
+            "description": "Alitas en salsa barbacoa de la casa; acompañadas de papas fritas.",
+            "price": "22.00"
+          },
+          {
+            "name": "Alitas BBQ picantes",
+            "description": "Alitas picantes en salsa barbacoa de la casa; acompañadas de papas fritas.",
+            "price": "22.00"
+          },
+          {
+            "name": "Alitas crocantes",
+            "description": "Alitas de pollo crocantes; acompañadas de papas andinas fritas.",
+            "price": "22.00"
+          },
+          {
+            "name": "Alitas en salsa de maracuyá",
+            "description": "Alitas de pollo fritas con salsa de maracuyá; acompañadas de papas andinas fritas.",
+            "price": "25.00"
+          },
+          {
+            "name": "Alitas acevichadas",
+            "description": "Alitas de pollo fritas con salsa acevichada; acompañadas de papas andinas fritas.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chicharrón de pollo",
+            "description": "Trozos de pechuga de pollo crocantes, papas fritas, ensalada de la casa.",
+            "price": "30.00"
+          },
+          {
+            "name": "Tortillas rellenas",
+            "description": "Tortillas rellenas de carne molida, pollo deshilachado, cebolla, tomate, palta, jamón.",
+            "price": "22.00"
+          },
+          {
+            "name": "Tortillas de pollo saltado",
+            "description": "Trozos de pollo, cebolla, tomate, ají amarillo, salsa de soja.",
+            "price": "25.00"
+          },
+          {
+            "name": "Tortillas de lomo saltado",
+            "description": "Trozos de lomo, cebolla, tomate, ají amarillo, salsa de soja.",
+            "price": "30.00"
+          },
+          {
+            "name": "Salchipapa",
+            "description": "Papas fritas, salchicha ahumada, chorizo parrillero, salchicha vienesa.",
+            "price": "20.00"
+          },
+          {
+            "name": "Salchipapa picante",
+            "description": "Papas fritas picantes, salchicha ahumada, chorizo parrillero, salchicha vienesa.",
+            "price": "23.00"
+          },
+          {
+            "name": "Salchipollo",
+            "description": "Trozos de filete de pollo, papas fritas, salchicha ahumada, chorizo parrillero, salchicha vienesa.",
+            "price": "30.00"
+          },
+          {
+            "name": "Salchipollo picante",
+            "description": "Trozos de filete de pollo, papas fritas picantes, salchicha ahumada, chorizo parrillero, salchicha vienesa.",
+            "price": "33.00"
+          },
+          {
+            "name": "Mini hamburguesas",
+            "description": "Mini hamburguesas artesanales con lechuga, tomate y queso cheddar; acompañadas de papas fritas.",
+            "price": "23.00"
+          }
+        ]
+      },
+      {
+        "name": "Sándwiches",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Lomo saltado",
+            "description": "Trozos de lomo, cebolla roja, tomate, ají amarillo, salsa de soja; acompañado de papas fritas.",
+            "price": "30.00"
+          },
+          {
+            "name": "Pollo saltado",
+            "description": "Trozos de pollo, cebolla roja, tomate, ají amarillo, salsa de soja; acompañado de papas fritas.",
+            "price": "25.00"
+          },
+          {
+            "name": "Filete de pollo",
+            "description": "Filete de pollo, queso, tomate, albahaca; acompañado de papas fritas.",
+            "price": "25.00"
+          },
+          {
+            "name": "Sándwich de pollo",
+            "description": "Pollo deshilachado, palta, mayonesa, apio, lechuga.",
+            "price": "13.00"
+          },
+          {
+            "name": "La vegetariana",
+            "description": "Lechuga, tomate, pepino, palta, huevo frito, queso.",
+            "price": "13.00"
+          },
+          {
+            "name": "La vegana",
+            "description": "Lechuga, tomate, orégano, palta, aceituna, champiñones.",
+            "price": "13.00"
+          },
+          {
+            "name": "Caprese",
+            "description": "Tomate, doble queso, albahaca, aceite de oliva.",
+            "price": "13.00"
+          },
+          {
+            "name": "Sándwich Kintuchay",
+            "description": "Trozos de lomo, pimiento, cebolla blanca, champiñones, doble queso, lechuga, tomate; acompañado de papas fritas.",
+            "price": "35.00"
+          }
+        ]
+      },
+      {
+        "name": "Hamburguesas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Cheeseburger",
+            "description": "Hamburguesa de la casa, doble queso, lechuga, tomate; acompañado de papas fritas.",
+            "price": "22.00"
+          },
+          {
+            "name": "Hamburguesa Royal",
+            "description": "Hamburguesa de la casa, lechuga, tomate, huevo frito, queso cheddar; acompañado de papas fritas.",
+            "price": "22.00"
+          },
+          {
+            "name": "La todo terreno",
+            "description": "Doble hamburguesa de la casa, queso, tocino, lechuga, tomate; acompañada de papas fritas.",
+            "price": "30.00"
+          },
+          {
+            "name": "Kintuchay Burger",
+            "description": "Doble hamburguesa artesanal en salsa BBQ, doble queso, cebolla blanca en BBQ, lechuga, tomate; acompañada de papas fritas.",
+            "price": "35.00"
+          }
+        ]
+      },
+      {
+        "name": "Opciones Vegetarianas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Chaufa de champiñones",
+            "description": "Arroz, salsa de soja, pimiento, cebolla china, champiñones, brócoli. (Tortilla de huevo opcional)",
+            "price": "30.00"
+          },
+          {
+            "name": "Tortillas de champiñones",
+            "description": "Cebolla, tomate, champiñones, brócoli, palta.",
+            "price": "25.00"
+          },
+          {
+            "name": "Saltado de champiñones",
+            "description": "Cebolla, tomate, ají amarillo, brócoli, champiñones, arroz blanco y papas fritas.",
+            "price": "30.00"
+          }
+        ]
+      },
+      {
+        "name": "Ensaladas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Ensalada mixta",
+            "description": "Lechuga, queso andino, tomate, palta, zanahoria rallada, almendras, especias, salsa vinagreta de la casa.",
+            "price": "20.00"
+          },
+          {
+            "name": "Ensalada griega",
+            "description": "Lechuga, tomate, pepino, pimientos, cebolla, aceitunas, queso fresco, especias, salsa vinagreta de la casa.",
+            "price": "20.00"
+          }
+        ]
+      },
+      {
+        "name": "Adicionales",
+        "note": "porciones regulares",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Papas fritas",
+            "price": "9.00"
+          },
+          {
+            "name": "Palta",
+            "price": "8.00"
+          },
+          {
+            "name": "Tocino",
+            "price": "7.00"
+          },
+          {
+            "name": "Champiñones",
+            "price": "10.00"
+          },
+          {
+            "name": "Huevo frito",
+            "price": "5.00"
+          },
+          {
+            "name": "Queso andino",
+            "price": "8.00"
+          },
+          {
+            "name": "Salchicha vienesa",
+            "price": "5.00"
+          },
+          {
+            "name": "Mixtura andina",
+            "description": "Porción de papas andinas nativas.",
+            "price": "13.00"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas Calientes",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Infusiones",
+            "variants": [
+              {
+                "name": "Muña",
+                "price": "7.00"
+              },
+              {
+                "name": "Anís",
+                "price": "7.00"
+              },
+              {
+                "name": "Manzanilla",
+                "price": "7.00"
+              },
+              {
+                "name": "Coca",
+                "price": "7.00"
+              },
+              {
+                "name": "Té (canela opcional)",
+                "price": "7.00"
+              }
+            ]
+          },
+          {
+            "name": "Café americano",
+            "price": "10.00"
+          },
+          {
+            "name": "Café americano con leche (deslactosada)",
+            "price": "13.00"
+          },
+          {
+            "name": "Chocolate de la casa",
+            "price": "12.00"
+          },
+          {
+            "name": "Chocolate con coca",
+            "price": "13.00"
+          },
+          {
+            "name": "Chocolate de la casa con leche (deslactosada)",
+            "price": "15.00"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas Frías",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Limonada clásica",
+            "price": "8.00"
+          },
+          {
+            "name": "Limonada frozen",
+            "price": "9.00"
+          },
+          {
+            "name": "Limonada a la menta",
+            "price": "9.00"
+          },
+          {
+            "name": "Jugo de maracuyá",
+            "price": "10.00"
+          },
+          {
+            "name": "Jugo de naranja",
+            "price": "12.00"
+          },
+          {
+            "name": "Jugo de fresa",
+            "price": "12.00"
+          },
+          {
+            "name": "Jugo de piña",
+            "price": "12.00"
+          }
+        ]
+      },
+      {
+        "name": "Gaseosas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Coca-Cola",
+            "variants": [
+              {
+                "name": "296 ml",
+                "price": "5.00"
+              },
+              {
+                "name": "600 ml",
+                "price": "7.00"
+              },
+              {
+                "name": "2.25 L",
+                "price": "20.00"
+              }
+            ]
+          },
+          {
+            "name": "Inca Kola",
+            "variants": [
+              {
+                "name": "600 ml",
+                "price": "7.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aguas Minerales",
+        "columns": 1,
+        "products": [
+          {
+            "name": "San Mateo (600 ml)",
+            "variants": [
+              {
+                "name": "Con gas",
+                "price": "5.00"
+              },
+              {
+                "name": "Sin gas",
+                "price": "5.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Helados",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Bolas de helado",
+            "variants": [
+              {
+                "name": "1 Bola",
+                "price": "8.00"
+              },
+              {
+                "name": "2 Bolas",
+                "price": "12.00"
+              },
+              {
+                "name": "3 Bolas",
+                "price": "16.00"
+              }
+            ],
+            "optionsAlign": "center",
+            "options": [
+              "Choco Chips",
+              "Chocolate",
+              "Tricolor (lúcuma, vainilla, fresa)"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "menu_format": {
+    "parts": [
+      {
+        "name": "Main Courses",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Lomo saltado",
+            "description": "Pieces of beef loin, onion, yellow chili, tomato, french fries, soy sauce, white rice.",
+            "price": "35.00"
+          },
+          {
+            "name": "Pollo saltado",
+            "description": "Chicken pieces, onion, yellow chili, tomato, french fries, soy sauce, white rice.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chaufa de lomo",
+            "description": "Pieces of beef loin, rice, pepper, scallion, minced sausage, omelet, soy sauce.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chaufa de pollo",
+            "description": "Chicken pieces, rice, pepper, scallion, minced sausage, omelet, soy sauce.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chaufa mixto",
+            "description": "Pieces of beef loin, chicken, rice, pepper, scallion, minced sausage, omelet, soy sauce.",
+            "price": "35.00"
+          },
+          {
+            "name": "Milanesa de pollo",
+            "description": "Breaded chicken fillet, house salad, french fries, white rice.",
+            "price": "30.00"
+          },
+          {
+            "name": "Filete de pollo a la Napolitana",
+            "description": "Chicken fillet, ham, Edam cheese, tomato sauce, basil; accompanied by french fries and house salad.",
+            "price": "30.00"
+          },
+          {
+            "name": "Pollo a la plancha",
+            "description": "Chicken fillet, white rice; accompanied by french fries and house salad.",
+            "price": "30.00"
+          },
+          {
+            "name": "Bistec montado",
+            "description": "Beef, french fries, white rice, fried egg, house salad.",
+            "price": "35.00"
+          },
+          {
+            "name": "Lomo de cerdo en salsa BBQ",
+            "description": "Pork loin in barbecue sauce; accompanied by french fries.",
+            "price": "35.00"
+          },
+          {
+            "name": "Churrasco al jugo",
+            "description": "Beef, french fries, onion, tomato, white rice.",
+            "price": "30.00"
+          },
+          {
+            "name": "Chuleta de cerdo a la plancha",
+            "description": "Pork, white rice; accompanied by french fries and house salad.",
+            "price": "30.00"
+          },
+          {
+            "name": "Kintuchay Grill",
+            "description": "One pork chop, one piece of chicken, one grilled chorizo, anticucho de corazón, chicken skewer, Andean potatoes, fresh salad.",
+            "price": "65.00"
+          }
+        ]
+      },
+      {
+        "name": "Soups",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Chicken soup",
+            "description": "Light soup with chicken pieces, vegetables, noodles.",
+            "price": "20.00"
+          }
+        ]
+      },
+      {
+        "name": "Snacks",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Tequeños",
+            "description": "Tequeños filled with Andean cheese and guacamole sauce.",
+            "price": "17.00"
+          },
+          {
+            "name": "BBQ Wings",
+            "description": "Wings in house barbecue sauce; accompanied by french fries.",
+            "price": "22.00"
+          },
+          {
+            "name": "Spicy BBQ Wings",
+            "description": "Spicy wings in house barbecue sauce; accompanied by french fries.",
+            "price": "22.00"
+          },
+          {
+            "name": "Crispy wings",
+            "description": "Crispy chicken wings; accompanied by fried Andean potatoes.",
+            "price": "22.00"
+          },
+          {
+            "name": "Wings in passion fruit sauce",
+            "description": "Fried chicken wings with passion fruit sauce; accompanied by fried Andean potatoes.",
+            "price": "25.00"
+          },
+          {
+            "name": "Alitas acevichadas",
+            "description": "Fried chicken wings with ceviche sauce; accompanied by fried Andean potatoes.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chicken crispy",
+            "description": "Crispy pieces of chicken breast, french fries, house salad.",
+            "price": "30.00"
+          },
+          {
+            "name": "Stuffed tortillas",
+            "description": "Tortillas filled with ground meat, shredded chicken, onion, tomato, avocado, ham.",
+            "price": "22.00"
+          },
+          {
+            "name": "Tortilla de pollo saltado",
+            "description": "Chicken pieces, onion, tomato, yellow chili, soy sauce.",
+            "price": "25.00"
+          },
+          {
+            "name": "Tortillas de lomo saltado",
+            "description": "Pieces of beef loin, onion, tomato, yellow chili, soy sauce.",
+            "price": "30.00"
+          },
+          {
+            "name": "Salchipapa",
+            "description": "French fries, smoked hot dog, grilled chorizo, Vienna sausage.",
+            "price": "20.00"
+          },
+          {
+            "name": "Spicy salchipapa",
+            "description": "Spicy french fries, smoked hot dog, grilled chorizo, Vienna sausage.",
+            "price": "23.00"
+          },
+          {
+            "name": "Salchipollo",
+            "description": "Pieces of chicken fillet, french fries, smoked hot dog, grilled chorizo, Vienna sausage.",
+            "price": "30.00"
+          },
+          {
+            "name": "Spicy salchipollo",
+            "description": "Pieces of chicken fillet, spicy french fries, smoked hot dog, grilled chorizo, Vienna sausage.",
+            "price": "33.00"
+          },
+          {
+            "name": "Mini burgers",
+            "description": "Artisanal mini hamburgers, lettuce, tomato, cheddar cheese; accompanied by french fries.",
+            "price": "23.00"
+          }
+        ]
+      },
+      {
+        "name": "Sandwiches",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Lomo saltado",
+            "description": "Pieces of beef loin, red onion, tomato, yellow chili, soy sauce; accompanied by french fries.",
+            "price": "30.00"
+          },
+          {
+            "name": "Pollo saltado",
+            "description": "Chicken pieces, red onion, tomato, yellow chili, soy sauce; accompanied by french fries.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chicken fillet",
+            "description": "Chicken fillet, cheese, tomato, basil; accompanied by french fries.",
+            "price": "25.00"
+          },
+          {
+            "name": "Chicken sandwich",
+            "description": "Shredded chicken, avocado, mayonnaise, celery, lettuce.",
+            "price": "13.00"
+          },
+          {
+            "name": "The vegetarian",
+            "description": "Lettuce, tomato, cucumber, avocado, fried egg, cheese.",
+            "price": "13.00"
+          },
+          {
+            "name": "The vegan",
+            "description": "Lettuce, tomato, oregano, avocado, olive, mushrooms.",
+            "price": "13.00"
+          },
+          {
+            "name": "Caprese",
+            "description": "Tomato, double cheese, basil, olive oil.",
+            "price": "13.00"
+          },
+          {
+            "name": "Kintuchay Sandwich",
+            "description": "Pieces of beef loin, pepper, white onion, mushrooms, double cheese, lettuce, tomato; accompanied by french fries.",
+            "price": "35.00"
+          }
+        ]
+      },
+      {
+        "name": "Burgers",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Cheeseburger",
+            "description": "House burger, double cheese, lettuce, tomato; accompanied by french fries.",
+            "price": "22.00"
+          },
+          {
+            "name": "Royal burger",
+            "description": "House burger, lettuce, tomato, fried egg, cheddar cheese; accompanied by french fries.",
+            "price": "22.00"
+          },
+          {
+            "name": "La Todo Terreno",
+            "description": "Double house burger, cheese, bacon, lettuce, tomato; accompanied by french fries.",
+            "price": "30.00"
+          },
+          {
+            "name": "Kintuchay Burger",
+            "description": "Double artisanal burger in BBQ sauce, double cheese, white onion in BBQ, lettuce, tomato; accompanied by french fries.",
+            "price": "35.00"
+          }
+        ]
+      },
+      {
+        "name": "Vegetarian Options",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Chaufa de champiñones",
+            "description": "Rice, soy sauce, pepper, scallion, mushrooms, broccoli. (optional: omelet)",
+            "price": "30.00"
+          },
+          {
+            "name": "Tortillas de champiñones",
+            "description": "Onion, tomato, mushrooms, broccoli, avocado.",
+            "price": "25.00"
+          },
+          {
+            "name": "Saltado de champiñones",
+            "description": "Onion, tomato, yellow chili, broccoli, mushrooms, white rice and french fries.",
+            "price": "30.00"
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Mixed salad",
+            "description": "Lettuce, Andean cheese, tomato, avocado, grated carrot, almonds, spices, house vinaigrette dressing.",
+            "price": "20.00"
+          },
+          {
+            "name": "Greek salad",
+            "description": "Lettuce, tomato, cucumber, peppers, onion, olives, fresh cheese, spices, house vinaigrette dressing.",
+            "price": "20.00"
+          }
+        ]
+      },
+      {
+        "name": "Extras",
+        "note": "regular portions",
+        "columns": 1,
+        "products": [
+          {
+            "name": "French fries",
+            "price": "9.00"
+          },
+          {
+            "name": "Avocado",
+            "price": "8.00"
+          },
+          {
+            "name": "Bacon",
+            "price": "7.00"
+          },
+          {
+            "name": "Mushrooms",
+            "price": "10.00"
+          },
+          {
+            "name": "Fried egg",
+            "price": "5.00"
+          },
+          {
+            "name": "Andean cheese",
+            "price": "8.00"
+          },
+          {
+            "name": "Vienna sausage",
+            "price": "5.00"
+          },
+          {
+            "name": "Andean mixture",
+            "description": "Portion of native Andean potatoes.",
+            "price": "13.00"
+          }
+        ]
+      },
+      {
+        "name": "Hot Drinks",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Infusions",
+            "variants": [
+              {
+                "name": "Andean mint",
+                "price": "7.00"
+              },
+              {
+                "name": "Anise",
+                "price": "7.00"
+              },
+              {
+                "name": "Chamomile",
+                "price": "7.00"
+              },
+              {
+                "name": "Coca",
+                "price": "7.00"
+              },
+              {
+                "name": "Tea (cinnamon optional)",
+                "price": "7.00"
+              }
+            ]
+          },
+          {
+            "name": "American coffee",
+            "price": "10.00"
+          },
+          {
+            "name": "American coffee with milk (lactose-free)",
+            "price": "13.00"
+          },
+          {
+            "name": "Homemade chocolate",
+            "price": "12.00"
+          },
+          {
+            "name": "Chocolate with coca",
+            "price": "13.00"
+          },
+          {
+            "name": "Homemade chocolate with milk (lactose-free)",
+            "price": "15.00"
+          }
+        ]
+      },
+      {
+        "name": "Cold Drinks",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Classic Lemonade",
+            "price": "8.00"
+          },
+          {
+            "name": "Frozen Lemonade",
+            "price": "9.00"
+          },
+          {
+            "name": "Mint Lemonade",
+            "price": "9.00"
+          },
+          {
+            "name": "Passion fruit juice",
+            "price": "10.00"
+          },
+          {
+            "name": "Orange juice",
+            "price": "12.00"
+          },
+          {
+            "name": "Strawberry juice",
+            "price": "12.00"
+          },
+          {
+            "name": "Pineapple juice",
+            "price": "12.00"
+          }
+        ]
+      },
+      {
+        "name": "Sodas",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Coca-Cola",
+            "variants": [
+              {
+                "name": "296 ml",
+                "price": "5.00"
+              },
+              {
+                "name": "600 ml",
+                "price": "7.00"
+              },
+              {
+                "name": "2.25 L",
+                "price": "20.00"
+              }
+            ]
+          },
+          {
+            "name": "Inca Kola",
+            "variants": [
+              {
+                "name": "600 ml",
+                "price": "7.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mineral Waters",
+        "columns": 1,
+        "products": [
+          {
+            "name": "San Mateo (600 ml)",
+            "variants": [
+              {
+                "name": "Sparkling mineral water",
+                "price": "5.00"
+              },
+              {
+                "name": "Mineral water",
+                "price": "5.00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ice Creams",
+        "columns": 1,
+        "products": [
+          {
+            "name": "Ice cream",
+            "variants": [
+              {
+                "name": "1 scoop",
+                "price": "8.00"
+              },
+              {
+                "name": "2 scoops",
+                "price": "12.00"
+              },
+              {
+                "name": "3 scoops",
+                "price": "16.00"
+              }
+            ],
+            "optionsAlign": "center",
+            "options": [
+              "Choco-Chips",
+              "Chocolate",
+              "Tricolor (lucuma, vanilla, strawberry)"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
