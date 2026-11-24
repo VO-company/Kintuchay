@@ -4,6 +4,7 @@
   --hint-bottom: 4vh;
   position: relative;
   height: 100vh;
+  height: 100svh;
   animation: fadeIn 1.5s ease forwards;
 }
 .banner > img {

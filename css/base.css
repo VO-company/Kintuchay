@@ -86,6 +86,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: var(--c23);
   font-family: var(--font-body);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -108,6 +109,7 @@ img {
 .bg {
   position: fixed;
   inset: 0;
+  min-height: 100lvh;
   z-index: -1;
   background-size: cover;
   background-position: center;
@@ -846,6 +848,7 @@ footer {
 
 /* WEB MODE */
 body.dark-mode {
+  background-color: var(--c16);
   --surface: var(--c17);
   --surface-2: var(--c24);
   --ink: var(--c24);
